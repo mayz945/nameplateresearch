@@ -133,7 +133,23 @@
       padding-bottom: 1px;
     }
     footer a:hover { border-bottom-color: var(--ink); }
+    .signin {
+      position: absolute; top: 22px; right: 24px;
+      font-family: var(--sans); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none; border-bottom: 1px solid transparent; padding-bottom: 2px;
+    }
+    .signin:hover { color: var(--ink); border-bottom-color: var(--ink); }
+    .preview {
+      margin: 52px auto 0; max-width: 34rem; padding-top: 34px; border-top: 1px solid rgba(27,27,26,0.14);
+    }
+    .preview h2 { font-weight: 400; font-size: 1.45rem; line-height: 1.2; margin: 0 0 12px; letter-spacing: -0.005em; }
+    .preview p { margin: 0 auto; max-width: 30rem; font-size: 1.0625rem; line-height: 1.55; color: var(--body); text-wrap: balance; }
+    .preview .actions { margin-top: 22px; display: flex; gap: 26px; justify-content: center; flex-wrap: wrap; font-family: var(--sans); font-size: 13px; }
+    .preview .actions a { color: var(--ink); text-decoration: none; border-bottom: 1px solid rgba(27,27,26,0.3); padding-bottom: 2px; }
+    .preview .actions a:hover { border-bottom-color: var(--ink); }
     @media (max-width: 480px) {
+      .signin { top: 16px; right: 16px; letter-spacing: 0.14em; }
+      .preview { margin-top: 44px; padding-top: 28px; }
       main { padding: 72px 24px 40px; }
       .rule { margin: 26px auto 30px; }
       .cta { margin-top: 40px; letter-spacing: 0.18em; }
@@ -141,6 +157,7 @@
   </style>
 </head>
 <body>
+  <a class="signin" href="https://tracker.nameplateresearch.com/login">Client sign in</a>
   <main>
     <p class="est">Est. 2026</p>
     <h1>Nameplate Research</h1>
@@ -150,6 +167,15 @@
       <p>Every new-build and expansion project, from first filing to commercial operation.</p>
     </div>
     <p class="cta">Ask for a sample on any project<a href="mailto:info@nameplateresearch.com">info@nameplateresearch.com</a></p>
+
+    <section class="preview" id="texas">
+      <h2>Texas gas generation tracker, open for preview</h2>
+      <p>Every gas-fired project in Texas from first filing to commercial operation: equipment and manufacturers, target dates and how they have moved, interconnection, permits, offtake and cost, each field verified against the public record. Preview access is free for industry professionals.</p>
+      <div class="actions">
+        <a href="mailto:info@nameplateresearch.com?subject=Texas%20tracker%20preview%20access&body=Name%2C%20company%20and%20role%3A%20">Request access</a>
+        <a href="https://tracker.nameplateresearch.com/login">Sign in</a>
+      </div>
+    </section>
   </main>
   <footer>&copy; 2026 Nameplate Research &nbsp;&middot;&nbsp; <a href="https://www.linkedin.com/company/nameplateresearch/" rel="me">LinkedIn</a></footer>
 </body>
